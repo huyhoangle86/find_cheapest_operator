@@ -13,12 +13,26 @@ Code Design
 --------------------
 
 Four classes : 
-1. TrieNode 
-2. Operator
-3. RateCalculator
-4. BaseRateCalculator acts as interface for Operator class.
+1. TrieNode [ Create the node ]
+2. Operator [ Search and insert the data]
+3. RateCalculator [ Preproces input data, get the output ]
+4. BaseRateCalculator [ Acts as interface for Operator class ].
 
 ![alt text](visualize_images/RateCalculator.jpg "Trie Node Visualize")
+
+
+Code Diagram :
+--------------------
+
+There are two main classes :
+
+1. RateCalculator 
+* This class main's purpose is to process input data and create a list contain each operator separately.
+2. Operator
+* The operator class's main purpose is to insert and search for prefixes and its rate then return result back to main class.
+
+
+![alt text](visualize_images/RateCalculator-Diagram.jpg "Trie Node Visualize")
 
 Explanation
 --------------------
@@ -67,3 +81,8 @@ How to run
 [ Run the test case ]
 
 `python3 test_rate_calculator.py`
+
+Recent Work Examples
+--------------------
+The *cv_recent_work.pdf* is where I listed my most interested project. 
+
