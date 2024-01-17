@@ -15,7 +15,7 @@ Code Design
 Four classes : 
 1. TrieNode [ Create the node ]
 2. Operator [ Search and insert the data]
-3. RateCalculator [ Preproces input data, get the output ]
+3. RateCalculator [ Preprocess input data, get the output ]
 4. BaseRateCalculator [ Acts as interface for Operator class ].
 
 ![alt text](visualize_images/RateCalculator.jpg "Trie Node Visualize")
@@ -27,9 +27,9 @@ Code Diagram :
 There are two main classes :
 
 1. RateCalculator 
-* This class main's purpose is to process input data and create a list contain each operator separately.
+* This class main purpose is to process input data and create a list contain each operator separately.
 2. Operator
-* The operator class's main purpose is to insert and search for prefixes and its rate then return result back to main class.
+* The operator class main purpose is to insert and search for prefixes and its rate then return result back to main class.
 
 
 ![alt text](visualize_images/RateCalculator-Diagram.jpg "Trie Node Visualize")
@@ -56,7 +56,7 @@ Here I assume phone number is a legit one as in the exercise (+46-73-212345), th
 
     Start from the root of the Trie, does the root have the child of the first digit we're looking for ?, let's say 4 in our case , the answer is Yes. For the digit 4, we're now looking for digit 6, does digit 4 have child 6 digit? , the answer is Yes again. We're going digit by digit in the phone number we're searching and checking if node exists for each digit in the phone number consecutively.
 
-    6 is our last digit we're searching for.Does the 6 mark at the end of phone number . Yes it is (we marked it in green with the rate of 0.17 as shown in below image)
+    6 is our last digit we're searching for. Does the 6 mark at the end of prefix?. Yes it is (we marked it in green with the rate of 0.17 as shown in below image)
 
 ![alt text](visualize_images/trienode_visualize.jpg "Trie Node Visualize")
 
