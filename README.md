@@ -33,7 +33,7 @@ Here I assume phone number is a legit one as in the excercise (+46-73-212345), t
 
     6 is our last digit we're searching for.Does the 6 mark at the end of phone number . Yes it is (we marked it in green with the rate of 0.17 as shown in below image)
 
-![alt text](visualize_images\trienode_visualize.jpg "Trie Node Visualize")
+![alt text](visualize_images/trienode_visualize.jpg "Trie Node Visualize")
 
 
 Tests
