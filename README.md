@@ -9,6 +9,17 @@ Application Purpose
 --------------------
 **Routing of telephone calls**  is purpose-built for the task of handling any number of operator and then calculate which operator that is cheapest for a certain phone number.
 
+Code Design
+--------------------
+
+Four classes : 
+1. TrieNode 
+2. Operator
+3. RateCalculator
+4. BaseRateCalculator acts as interface for Operator class.
+
+![alt text](visualize_images/RateCalculator.jpg "Trie Node Visualize")
+
 Explanation
 --------------------
 In this code assignment I utilize the Trie algorithm (prefix tree) for storing the prefixes according with their rate. The reason I choosed Trie is because Tries are efficient for matching prefixes in strings, which is exactly what we need for telephone number prefixes. Each node in the trie will represent a digit of the prefix. The nodes will store the rate for the prefix ending at that node.
