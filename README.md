@@ -24,7 +24,7 @@ Explanation
 --------------------
 In this code assignment I utilize the Trie algorithm (prefix tree) for storing the prefixes according with their rate. The reason I choosed Trie is because Tries are efficient for matching prefixes in strings, which is exactly what we need for telephone number prefixes. Each node in the trie will represent a digit of the prefix. The nodes will store the rate for the prefix ending at that node.
 
-Here I assume phone number is a legit one as in the excercise (+46-73-212345), the price per minute can goes to infinity that means can be very large price. 
+Here I assume phone number is a legit one as in the exercise (+46-73-212345), the price per minute can goes to infinity that means can be very large price. 
 
 **Inserting**:
 
@@ -52,10 +52,10 @@ Tests
 The test cases are fairly straight forward. We have total 5 tests covering all cases:
 
 * test_insert_prefix_rate [ instert prefix and rate pair one by one]
-* test_bulk_insert_prefix_rates [ builk instert prefix and rate pairs]
+* test_bulk_insert_prefix_rates [ bulk instert prefix and rate pairs]
 * test_find_cheapest_operator [ given phone number, find cheapest operator]
 * test_no_operator_found [ return None if there aren't any operator found for input phone number]
-* test_with_large_dataset [ Insert data with thousands entries ]
+* test_with_large_dataset [ Insert data with thousands of entries ]
 
 
 How to run
