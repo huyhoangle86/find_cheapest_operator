@@ -82,9 +82,9 @@ CD to /src and run
 
 [ Run the test case ]
 
-CD to /src/tests and run
+CD to /src and run
 
-`python3 test_rate_calculator.py`
+`python3 tests/test_rate_calculator.py`
 
 Recent Work Examples
 --------------------

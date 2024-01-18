@@ -1,21 +1,6 @@
+from nodes.trie import TrieNode
 from base_rate_calculator import BaseRateCalculator
-from typing import Dict, List, Tuple, Optional
-
-
-class TrieNode:
-    """A node in the Trie structure for storing telephone number
-        prefixes and rates.
-
-    Attributes:
-        children (Dict[str, 'TrieNode']): A dictionary mapping a digit
-        to the next TrieNode.
-        rate (Optional[float]): The rate associated with the prefix
-        at this node.
-    """
-
-    def __init__(self) -> None:
-        self.children = {}
-        self.rate = None
+from typing import List, Tuple, Optional
 
 
 class Operator(BaseRateCalculator):

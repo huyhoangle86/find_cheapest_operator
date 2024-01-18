@@ -1,5 +1,5 @@
 from typing import Dict, List, Tuple, Optional
-from operators import Operator
+from operators.operators import Operator
 
 
 class RateCalculator:

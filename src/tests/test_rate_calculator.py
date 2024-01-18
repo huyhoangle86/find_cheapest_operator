@@ -1,5 +1,9 @@
+import os
+import sys
 import unittest
 from typing import Dict, List, Tuple
+sys.path.append(os.path.abspath(os.curdir))
+
 from rate_calculator import Operator, RateCalculator
 
 
