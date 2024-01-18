@@ -18,7 +18,7 @@ Four classes :
 3. RateCalculator [ Preprocess input data, get the output ]
 4. BaseRateCalculator [ Acts as interface for Operator class ].
 
-![alt text](visualize_images/RateCalculator.jpg "Trie Node Visualize")
+![alt text](docs/visualize_images/RateCalculator.jpg "Trie Node Visualize")
 
 
 Code Diagram :
@@ -32,7 +32,7 @@ There are two main classes :
 * The operator class main purpose is to insert and search for prefixes and its rate then return result back to main class.
 
 
-![alt text](visualize_images/RateCalculator-Diagram.jpg "Trie Node Visualize")
+![alt text](docs/visualize_images/RateCalculator-Diagram.jpg "Trie Node Visualize")
 
 Explanation
 --------------------
@@ -58,7 +58,7 @@ Here I assume phone number is a legit one as in the exercise (+46-73-212345), th
 
     6 is our last digit we're searching for. Does the 6 mark at the end of prefix?. Yes it is (we marked it in green with the rate of 0.17 as shown in below image)
 
-![alt text](visualize_images/trienode_visualize.jpg "Trie Node Visualize")
+![alt text](docs/visualize_images/trienode_visualize.jpg "Trie Node Visualize")
 
 
 Tests
@@ -76,14 +76,19 @@ How to run
 --------------------
 [ Run the script to see the output ]
 
+CD to /src and run
+
 `python3 rate_calculator.py`
 
 [ Run the test case ]
+
+CD to /src/tests and run
 
 `python3 test_rate_calculator.py`
 
 Recent Work Examples
 --------------------
-The *cv_recent_work.pdf* is where I listed my most interested project. 
+The *docs/cv_recent_work.pdf* is where I listed my most interested project. 
+
 Click **Download raw file** button to download the CV containing my recent works.
 
