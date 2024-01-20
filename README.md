@@ -3,7 +3,7 @@ ROUTING OF TELEPHONE CALLS
 
 Introduction
 ------------
-Welcome to the document of the **Routing of telephone calls**. This document aims to provide a detailed understanding of the code design, key components, algorithm. 
+Welcome to the document of the **Routing of telephone calls**. This document aims to provide a detailed understanding of the code design, key components, data structure. 
 
 Application Purpose
 --------------------
@@ -36,7 +36,7 @@ There are two main classes :
 
 Explanation
 --------------------
-In this code assignment I utilize the Trie algorithm (prefix tree) for storing the prefixes according with their rate. The reason I choosed Trie is because Tries are efficient for matching prefixes in strings, which is exactly what we need for telephone number prefixes. Each node in the trie will represent a digit of the prefix. The nodes will store the rate for the prefix ending at that node.
+In this code assignment I utilize the Trie data structure (prefix tree) for storing the prefixes according with their rate. The reason I choosed Trie is because Tries are efficient for matching prefixes in strings, which is exactly what we need for telephone number prefixes. Each node in the trie will represent a digit of the prefix. The nodes will store the rate for the prefix ending at that node.
 
 Here I assume phone number is a legit one as in the exercise (+46-73-212345), the price per minute can goes to infinity that means can be very large price. 
 
