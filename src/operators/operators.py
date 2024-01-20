@@ -11,12 +11,12 @@ class Operator(BaseRateCalculator):
         trie_root (TrieNode): The root node of the trie.
 
     Methods:
-        bulk_insert_prefix_rates(prefix_rates): Adds multiple prefixes
+        bulk_insert_prefix_rates(prefix_rates): Inserts multiple prefixes
         and their rates.
-        insert_prefix_rate(prefix, rate): Adds a single prefix
+        insert_prefix_rate(prefix, rate): Inserts a single prefix
         and its rate.
         get_rate_for_number(number): Retrieves the rate for
-        a given number.
+        a given phone number.
     """
 
     def __init__(self, name: str) -> None:
