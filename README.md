@@ -63,7 +63,7 @@ Here I assume phone number is a legit one as in the exercise (+46-73-212345), th
 
 Tests
 --------------------
-The test cases are fairly straight forward. We have total 5 tests covering all cases:
+The test cases are fairly straight forward. We have total 5 tests covering some cases:
 
 * test_insert_prefix_rate [ instert prefix and rate pair one by one]
 * test_bulk_insert_prefix_rates [ bulk instert prefix and rate pairs]
