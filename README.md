@@ -86,9 +86,4 @@ CD to /src and run
 
 `python3 tests/test_rate_calculator.py`
 
-Recent Work Examples
---------------------
-The *docs/cv_recent_work.pdf* is where I listed my most interested project. 
-
-Click **Download raw file** button to download the CV containing my recent works.
 
