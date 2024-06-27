@@ -70,7 +70,7 @@ The test cases are fairly straight forward. We have total 5 tests covering some 
 * test_find_cheapest_operator [ given phone number, find cheapest operator]
 * test_no_operator_found [ return None if there aren't any operator found for input phone number]
 * test_with_large_dataset [ Insert data with thousands of entries ]
-* test_wrong_input [ Test wrong output ]
+* test_wrong_input [ Test wrong output [ TODO] ]
 * There might be another test case -> I will update it in the future
 
 
