@@ -9,6 +9,31 @@ from rate_calculator import Operator, RateCalculator
 
 class TestRateCalculator(unittest.TestCase):
 
+    def test_wrong_input(self):
+        """Handle wrong input cases for prefix and rate"""
+        operator = Operator('Unittest Operator')
+        
+        # Test inserting invalid prefix
+        with self.assertRaises(ValueError):
+            operator.insert_prefix_rate('ABC', 0.5)
+        
+        # Test inserting invalid rate
+        with self.assertRaises(ValueError):
+            operator.insert_prefix_rate('123', 'not_a_rate')
+        
+        # Test bulk inserting with invalid data
+        invalid_rates = [('096', 0.1), ('ABC', 0.2)]
+        with self.assertRaises(ValueError):
+            operator.bulk_insert_prefix_rates(invalid_rates)
+
+        invalid_rates = [('096', 0.1), ('234', 'not_a_rate')]
+        with self.assertRaises(ValueError):
+            operator.bulk_insert_prefix_rates(invalid_rates)
+
+        # Test finding rate with invalid phone number
+        with self.assertRaises(ValueError):
+            operator.get_rate_for_number('invalid_number')
+
     def test_insert_prefix_rate(self):
         """Instert prefix and rate pair one by one"""
         operator = Operator('Unittest Operator')
